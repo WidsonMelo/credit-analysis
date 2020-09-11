@@ -50,14 +50,11 @@ For any other observation, inspect the "application.properties" file and also th
 After importing the project, Maven will download the necessary dependencies and this will take a few minutes, according to information in the lower left bar of the eclipse (Progress).
 To starting application, do execute execute the class bellow.Executar a seguinte classe (Run As Java Application).
 ```
-crud-cars > com.widson.crudcars > CrudCarsApplication.java
+credit-analysis > com.widson.creditanalysis > CreditAnalysisApplication.java
 ```
 
 ## endpoint.txt file
 The file endpoint.txt shows all the endpoints contemplated by the project, you can use as specified in this file.
-
-## Inspiration
-Daniel Guimaraes Silva and Thiago Vasconcelos Costa Freire, at Conductor Tecnologia.
 
 ## Autor
 **Widson Gomes de Melo**
