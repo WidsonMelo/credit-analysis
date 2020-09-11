@@ -1,5 +1,5 @@
 # Credit Analysis
-Credit Analysis An Api to request credit analysis for new users. The user requests a credit analysis proposal, the analysis is evaluated and approved (or disapproved) by another user with specific assignment for this function. Credit analysis is registered by one type of user (Pickup) and proven (or disapproved) by another type of user (Analyst). Este aplicativo usa Spring Boot, MySQL e Postman para analisar requisições.
+Credit Analysis An Api to request credit analysis for new users. The user requests a credit analysis proposal, the analysis is evaluated and approved (or disapproved) by another user with specific assignment for this function. Credit analysis is registered by one type of user (Pickup) and proven (or disapproved) by another type of user (Analyst).
 
 ## Problem
 Develop a credit analysis system for new cardholders, where we must have users with two types of permission, namely:
