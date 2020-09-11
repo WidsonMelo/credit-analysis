@@ -53,6 +53,9 @@ To starting application, do execute execute the class bellow.Executar a seguinte
 crud-cars > com.widson.crudcars > CrudCarsApplication.java
 ```
 
+## endpoint.txt file
+The file endpoint.txt shows all the endpoints contemplated by the project, you can use as specified in this file.
+
 ## Inspiration
 Daniel Guimaraes Silva and Thiago Vasconcelos Costa Freire, at Conductor Tecnologia.
 
@@ -60,7 +63,8 @@ Daniel Guimaraes Silva and Thiago Vasconcelos Costa Freire, at Conductor Tecnolo
 **Widson Gomes de Melo**
 ```
 Linkedin https://www.linkedin.com/in/widsonmelo/
+```
 
-## License
+## Licence
 This project is licensed under the Apache License - see the [LICENSE.md](LICENSE) file for details.
 ```

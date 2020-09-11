@@ -1,0 +1,220 @@
+################################################### ENDERECO ###################################################
+(GET) Endereco - readAll
+http://localhost:8080/endereco/all
+
+(GET) Endereco - readById
+http://localhost:8080/endereco/1
+
+(DELETE) Endereco delete
+localhost:8080/endereco/1
+
+(POST) Endereco create
+localhost:8080/endereco
+Body
+{
+    "rua": "José Vieira de Lima"
+}
+
+(PUT) Endereco updateById
+localhost:8080/endereco/4
+Body
+{
+    "id": 4,
+    "rua": "Rua José Vieira de Lima",
+    "numero": "199",
+    "complemento": null,
+    "cep": "58417-393",
+    "cidade": "Campina Grande",
+    "estado": "Paraíba",
+    "pais": "Nigéria"
+}
+
+################################################### USUARIO ###################################################
+(GET) Usuario readAll
+http://localhost:8080/usuario/all
+
+(GET) Usuario readById
+http://localhost:8080/usuario/5
+
+(DELETE) Usuario delete
+http://localhost:8080/usuario/4
+
+(POST) Usuario create
+localhost:8080/usuario
+Body
+{
+    "nome": "Dalva Maria",
+    "login": "toor",
+    "senha": "1234",
+    "funcao": "Analista"
+}
+
+(PUT) Usuario updateById
+localhost:8080/usuario/10
+Body
+{
+    "id": 10,
+    "nome": "Dalva Maria",
+    "login": "toor",
+    "senha": "1234",
+    "funcao": "Analista"
+}
+
+################################################### CANDIDATO ###################################################
+(GET) Candidato readAll
+http://localhost:8080/candidato/all
+
+(GET) Candidato readById
+http://localhost:8080/candidato/2
+
+(GET) Candidato readByNome
+http://localhost:8080/candidato/nome
+Body
+{
+    "nome": "Luis Jairo"   
+}
+
+(DELETE) Candidato delete
+http://localhost:8080/candidato/1
+
+(POST) Candidato create
+http://localhost:8080/candidato/
+Body
+{
+    "nome": "Calos André da Silva",
+    "data_nascimento": "07/05/1990",
+    "salario": 2900.1,
+    "profissao": "Técnico em Logística",
+    "status": "Pendente",
+    "cpf": "073.234.654-09",
+    "estado_civil": "Solteiro",
+    "sexo": null,
+    "quantidade_dependentes": 3,
+    "endereco": {
+        "rua": "Rua José Vieira de Lima",
+        "numero": "199",
+        "complemento": null,
+        "cep": "58417-393",
+        "cidade": "Campina Grande",
+        "estado": "Paraíba",
+        "pais": "Brasil"
+    }
+}
+
+################################################### PROPOSTA ###################################################
+(GET) Proposta readAll
+http://localhost:8080/proposta/all
+
+(GET) Proposta readById
+localhost:8080/proposta/2
+
+(PUT) Proposta updateById
+localhost:8080/proposta/4
+Body
+{
+    "id": 2,
+    "status": "Pendente",
+    "usuario": {
+        "id": 3,
+        "nome": "Caroline Ramalho",
+        "login": "toor",
+        "senha": "1234",
+        "funcao": "Analista"
+    },
+    "candidato": {
+        "id": 2,
+        "nome": "Jorge",
+        "data_nascimento": "20/01/1977",
+        "salario": 1290.2,
+        "profissao": "Advogado",
+        "cpf": "012.124.624-09",
+        "estado_civil": "Casado",
+        "sexo": "Masculino",
+        "quantidade_dependentes": 0,
+        "endereco": {
+            "id": 2,
+            "rua": "Rua Raul Farias",
+            "numero": "200",
+            "complemento": null,
+            "cep": "58100-393",
+            "cidade": "Campina Grande",
+            "estado": "Paraíba",
+            "pais": "Brasil"
+        }
+    }
+}
+
+(PUT) Proposta aprovarProposta
+localhost:8080/proposta/aprovar/4
+Body
+{
+    "id": 2,
+    "status": "Pendente",
+    "usuario": {
+        "id": 3,
+        "nome": "Caroline Ramalho",
+        "login": "toor",
+        "senha": "1234",
+        "funcao": "Analista"
+    },
+    "candidato": {
+        "id": 2,
+        "nome": "Jorge",
+        "data_nascimento": "20/01/1977",
+        "salario": 1290.2,
+        "profissao": "Advogado",
+        "cpf": "012.124.624-09",
+        "estado_civil": "Casado",
+        "sexo": "Masculino",
+        "quantidade_dependentes": 0,
+        "endereco": {
+            "id": 2,
+            "rua": "Rua Raul Farias",
+            "numero": "200",
+            "complemento": null,
+            "cep": "58100-393",
+            "cidade": "Campina Grande",
+            "estado": "Paraíba",
+            "pais": "Brasil"
+        }
+    }
+}
+
+(PUT) Proposta reprovarProposta
+localhost:8080/proposta/reprovar/2
+Body
+{
+    "id": 2,
+    "status": "Pendente",
+    "usuario": {
+        "id": 3,
+        "nome": "Edvanda Gomes da Silva",
+        "login": "root",
+        "senha": "1234",
+        "funcao": "Analista"
+    },
+    "candidato": {
+        "id": 2,
+        "nome": "Calos André da Silva",
+        "data_nascimento": "07/05/1990",
+        "salario": 2900.1,
+        "profissao": "Técnico em Logística",
+        "cpf": "073.234.654-09",
+        "estado_civil": "Solteiro",
+        "sexo": "Masculino",
+        "quantidade_dependentes": 3,
+        "endereco": {
+            "id": 1,
+            "rua": "Rua José Vieira de Lima",
+            "numero": "199",
+            "complemento": null,
+            "cep": "58417-393",
+            "cidade": "Campina Grande",
+            "estado": "Paraíba",
+            "pais": "Brasil"
+        }
+    }
+}
+
+
+
